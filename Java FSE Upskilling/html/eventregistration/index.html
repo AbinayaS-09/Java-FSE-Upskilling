@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title >Registration Form</title>
+    <style>
+      
+         .form{
+           margin: 50px auto;;
+           padding: 20px;
+           border:3px solid black;
+        border-radius: 10px;
+        width:300px;
+        background-color: white;
+            }
+
+        .body{
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+<body class="body">
+    <h2 style="text-align: center;">Registration Form</h2>
+
+    <form class="form" id="regForm" >
+        <label>Name: </label>
+        <input type="text" name="username" placeholder="Enter your name" required autofocus><br><br>
+
+        <label>Email: </label>
+        <input type="email" name="email" placeholder="email@example.com" required><br><br>
+       <label>Phone No: </label>
+        <input type="phone" id="phone" name="phone" onblur="validatephone()" required><br><br>
+        <span id="phoneError" style="color:red;"></span>
+<br>
+
+        <label>Event: </label>
+        <select name="event"id="event" onchange="calculateEventFee()" required>
+            <option value="wedding">Wedding</option>
+            <option value="birthday">Birthday</option>
+            <option value="conference">Conference</option>
+            <option value="other">Other</option>
+        </select><br><br>
+      <div id="eventfee"></div>
+        <label>Message: </label><br>
+        <textarea id="feedback" name="message" rows="4" cols="40" placeholder="Type your message here..." required></textarea><br><br>
+<span id="charCount">0 characters</span><br><br>
+        <input type="submit" value="Submit"  >
+        <output id="output"></output>
+    </form>
+
+
+
+    <script>
+        const form=document.getElementById('regForm');
+        const output=document.getElementById('output');
+
+        form.addEventListener('submit',function(event){
+            event.preventDefault();
+            output.innerHTML="Form submitted successfully by"+" "+form.username.value;
+        })
+
+       function validatephone() {
+    const phoneInput = document.getElementById('phone');
+    const phone = phoneInput.value;
+    const phoneRegex = /^\d{10}$/;
+    const error = document.getElementById('phoneError');
+
+    if (phoneRegex.test(phone)) {
+        error.textContent = "✅ Valid phone number";
+        error.style.color = "green";
+    } else {
+        error.textContent = "❌ Invalid phone number. Must be 10 digits.";
+        error.style.color = "red";
+    }
+}
+
+
+function calculateEventFee() {
+    const event=document.getElementById('event');
+    const eventfee=document.getElementById('eventfee');
+     let fee = '';
+    switch(this.value){
+        case 'wedding':
+            fee='$1000';
+            break;
+        case 'birthday':
+            fee='$500';
+            break;
+        case 'conference':  
+            fee='$200';
+            break;
+        case 'other':
+            fee='$100';
+            break;
+    }
+    if(fee){
+        eventfee.textContent='Event fee: '+fee;
+    }
+}
+
+function myfunction(){
+      const img = document.getElementById('eventImage');
+      if(img.style.width =='150px'){
+        img.style.width='300px';
+      }
+        else{
+            img.style.width='150px';
+        }
+
+}
+const feedback = document.getElementById('feedback');
+const charCount = document.getElementById('charCount');
+
+feedback.addEventListener('input', function () {
+    charCount.textContent = `${feedback.value.length} characters`;
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+     background-image: url('images.jpeg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+li {
+    text-align: center;
+  display: inline;
+}
+/*
+#navbar ul li{
+    list-style-type:square;
+    list-style-position: inside;
+    padding: 10px;
+    margin:5px;
+}*/
+section h1{
+background-image: radial-gradient(circle, #5c0067 0%, #00d4ff 100%);
+ font-family: "Poppins", sans-serif;
+    padding: 10px;
+}
+#event1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    font-weight: normal;
+}
+/*style cta-button in the body*/
+.cta-button{
+    margin: auto;
+    padding: 10px;
+    background-color: cornflowerblue;
+    color: black;
+    font-size: 20px;
+      outline: 2px solid dodgerblue;
+
+    border-radius: 15px;
+    border:15ox solid black;
+}
+.event-bulletin{
+    column-count: 3;
+    column-gap: 40px;
+    border: 2px solid black;
+}
+/*style cta-button when hovered*/
+.cta-button:hover{
+    color:chartreuse;
+}
+.hidden-text {
+  visibility: hidden;
+  background: yellow;
+}
+
+.none-text {
+  display: none;
+  background: lightgreen;
+}
+
+h1{
+    color:blue;
+}
+#welcomeBanner{
+    color:deeppink;
+    font-size: 50px;
+}
+#eventcard{
+    border:3px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: lavenderblush;
+}
+.flo figcaption h3,
+.flo figcaption p{
+    color:palevioletred;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding:3px;
+}
+
+a:link{
+    color:blue;
+    text-decoration: none;
+}
+a:visited{
+      overflow: hidden;
+
+    color:red;
+    text-decoration: underline;
+}
+a:hover{
+    color:green;
+}
+#eventTable tr:nth-child(odd){
+    background-color: lightblue;
+}
+footer p,
+footer a{
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding: 10px;
+   color:white;
+    
+}
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 3.5vw; /* Smaller readable size */
+  }
+}

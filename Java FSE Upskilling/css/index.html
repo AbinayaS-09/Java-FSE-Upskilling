@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portal Base Template</title>
+    <style>
+        #welcomeBanner{
+            background-color: lightslategrey;
+        }
+        .highlight{
+            background-color: red;
+             font-weight: bold;
+        }
+        .flo img{
+            height:300px;
+             width: 100%;
+        }
+    </style>
+     <!--External CSS-->
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <nav id="navbar">
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#events">Events</a></li>
+    <li><a href="#contact">Contact</a></li>
+     <li><a href="help.html" target="_blank">Help</a></li>
+  </ul>
+</nav>
+ 
+
+    <main>
+        <section id="home">
+            <h1>Welcome to the Home Section</h1>
+            <p>This is the homepage of the portal.</p>
+        </section>
+
+        <section id="events">
+            <h1>Upcoming Events</h1>
+            <p>Details about events will be shown here.</p>
+        </section>
+
+        <section id="contact">
+            <h1>Contact Us</h1>
+            <p>Reach us through this section.</p>
+        </section>
+
+    </main>
+     <div id="welcomeBanner">
+        <p>Hello Welcome to the Portal!</p>
+     </div>
+     <p class="hidden-text">This is portal for the use of<span class="highlight"> Welcome Message</span> with Styling and<span class="highlight"> ID/Class</span></p>
+
+
+     <!--This is a simple HTML document -->
+    <h1 style="color: red;" /*class="none-text"*/>Welcome to the Home Section</h1> <h1 class="none-text">Welcome to the Home Section</h1>
+    <section class="event-bulletin">
+  <h2>Latest Event Updates</h2>
+  <p>
+    🎉 The City Marathon 2025 is scheduled for June 15. Register online to participate and get your free event kit.  
+    🥁 The Spring Music Festival is coming to Central Park on May 28. Enjoy live bands, food trucks, and local artisans.  
+    🧹 Join the Clean City Drive every Saturday at 9 AM starting from the Town Hall. Gloves and bags will be provided.  
+    🎨 A Street Art Competition is open for entries until July 1. Winners will be featured on public murals.  
+    🧘 Weekly Yoga in the Park resumes from May 25, every Sunday 6–7 AM. Bring your own mat and water bottle.  
+    🗳️ Public Feedback Forum is now live! Share your suggestions on improving local events at cityevents.gov.
+  </p>
+</section>
+
+    
+    <button class="cta-button">Get Started</button>
+    <table>
+        <tr>
+            <td id="eventcard">
+                <figure class="flo">
+                    <img src="eventimgc\wedding-1836315_640.jpg" alt="wedding">
+                    <figcaption><h3>Wedding Event</h3>
+                     <p class="event1">decription:A wedding event description typically <br>includes the date, time, location, and a brief overview <br>of the event, often including the names of the couple and any<br> relevant details like a theme or dress code.<br> It might also mention if it's a ceremony, reception, <br>or a combination of both. </p>
+                    </figcaption>
+                </figure>
+            </td>
+              <td id="eventcard">
+                <figure class="flo">
+                    <img src="eventimgc\birthday-1835443_640.jpg" alt="">
+                    <figcaption><h3>Daisy – Cheerful Simplicity</h3>
+                    <p>decription:</p></figcaption>
+                </figure>
+            </td>
+              <td id="eventcard">
+                <figure class="flo">
+                    <img src="eventimgc\cycling-4397606_640.jpg" alt="">
+                    <figcaption><h3>Daisy – Cheerful Simplicity</h3>
+                        <p>decription:</p>
+
+</figcaption>
+                </figure>
+            </td>
+        </tr>
+        <tr>
+            <td id="eventcard">
+             <figure class="flo">
+                    <img src="eventimgc\fireworks-180553_640.jpg" alt="">
+                    <figcaption><h3>Daisy – Cheerful Simplicity</h3>
+                        <p>decription:</p>
+                     </figcaption>
+                </figure>
+            </td>
+              <td id="eventcard">
+                <figure class="flo">
+                    <img src="eventimgc\parade-4879243_640.jpg" alt="">
+                    <figcaption>
+                      <h3>Daisy – Cheerful Simplicity</h3>
+                      <p>decription:</p>
+                    </figcaption>
+                </figure>
+            </td>
+              <td id="eventcard">
+                <figure class="flo">
+                    <img src="eventimgc/wedding-1836315_640.jpg" alt="">
+                    <figcaption><h3>Daisy – Cheerful Simplicity</h3>
+                        <p>decription:</p>
+                    </figcaption>
+                </figure>
+            </td>
+        </tr>
+    </table>
+
+
+    <table id="eventTable">
+        <tr>
+            <th>Event ID</th>
+            <th>Event Name</th>
+            <th>Organizer</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Action</th>
+        </tr>
+<tr>
+    <td>1</td>
+    <td>Wedding</td>
+    <td>John Doe</td>
+    <td>2025-05-15</td>
+    <td>Confirmed</td>
+    <td>
+        <button class="cta-button">View</button>
+        <button class="cta-button">Edit</button>
+        <button class="cta-button">Delete</button>
+    </td>
+</tr>
+<tr>
+    <td>2</td>
+    <td>Birthday</td>
+    <td>Jane Smith</td>
+    <td>2025-06-20</td>
+    <td>Confirmed</td>
+    <td>
+        <button class="cta-button">View</button>
+        <button class="cta-button">Edit</button>
+        <button class="cta-button">Delete</button>
+    </td>
+</tr>
+<tr>
+    <td>3</td>
+    <td>Conference</td>
+    <td>Tech Corp</td>
+    <td>2025-07-10</td>
+    <td>Pending</td>
+    <td>
+        <button class="cta-button">View</button> 
+        <button class="cta-button">Edit</button>
+        <button class="cta-button">Delete</button>
+        </td>
+</tr>
+<tr>
+    <td>4</td>
+    <td>Workshop</td>
+    <td>ABC Institute</td>
+    <td>2025-08-25</td>
+    <td>Confirmed</td>
+    <td>
+        <button class="cta-button">View</button>
+        <button class="cta-button">Edit</button>                        
+        <button class="cta-button">Delete</button>
+
+    </td>
+</tr>
+    </table>
+     <footer>
+        <p>&copy; 2025 Portal Name. All rights reserved.</p>
+        <a href="https://www.example.com/privacy-policy" target="_blank">Privacy Policy</a>
+        <a href="https://www.example.com/terms-of-service">Terms of Service</a>
+
+    </footer>
+
+</body>
+</html>
